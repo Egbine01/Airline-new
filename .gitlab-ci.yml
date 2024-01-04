@@ -13,6 +13,7 @@ before_script:
 build-job:
   stage: build
   script:
+     - echo "Current working directory: $(pwd)"
      - echo "Contents of the Dockerfile directory:"
      - ls -l "C:/Users/owner/Desktop/DevOps assignment/Airline"
      - echo "Building Docker image..."
