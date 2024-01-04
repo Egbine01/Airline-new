@@ -14,4 +14,5 @@ build-job:
   stage: build
   script:
     - echo "Building Docker image..."
-    - docker build -t $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG -f "C:\\Users\\owner\\Desktop\\DevOps assignment\\Airline\\Dockerfile" .
+    - ls -la "C:\\Users\\owner\\Desktop\\DevOps assignment\\Airline\\"
+    - docker build -t $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG -f "C:\Users\owner\Desktop\DevOps assignment\Airline\Dockerfile" .
