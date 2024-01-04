@@ -7,11 +7,12 @@ variables:
 
 before_script:
   - echo "Install Docker..."
-  - choco install docker-cli -y  # Installing Docker CLI using Chocolatey
-  - RefreshEnv  # Refreshing environment variables after installing Docker CLI
+  - apt-get update -qy
+  - apt-get install -y docker.io
 
 build-job:
   stage: build
   script:
-    - echo "Building Docker image..."
+    - pwd  # Print the current working directory
+    - ls -l /builds/dev-ops-group-x/flight-booking/Airline  # List contents of the "Airline" directory
     - docker build -t $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG -f "C:/Users/owner/Desktop/DevOps assignment/Airline/Dockerfile" .
