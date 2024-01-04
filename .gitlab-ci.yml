@@ -13,9 +13,5 @@ before_script:
 build-job:
   stage: build
   script:
-    - echo "Copying Dockerfile into the context..."
-    - cp "C:\Users\owner\Desktop\DevOps assignment\Airline\Dockerfile" .
-    - echo "Building Docker image..."
-    - docker build -t $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG .
-  only:
-    - master
+     - echo "Building Docker image..."
+    - docker build -t $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG -f "Airline/Dockerfile" .
