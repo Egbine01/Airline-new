@@ -2,6 +2,7 @@ stages:
   - build
 
 variables:
+  DOCKER_REGISTRY: "registry.gitlab.com"  # Replace with your registry URL
   DOCKER_IMAGE_NAME: "airline_system"
   DOCKER_IMAGE_TAG: "1.0"
 
@@ -14,4 +15,7 @@ build-job:
   stage: build
   script:
     - echo "Building Docker image..."
-    - docker build -t $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG -f "Airline/Dockerfile" .
+    - docker build -t $DOCKER_REGISTRY/$DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG -f "C:/Users/owner/Desktop/DevOps assignment/Airline/Dockerfile" .
+    # Additional steps for pushing the image to the registry if needed
+    # - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    # - docker push $DOCKER_REGISTRY/$DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG
