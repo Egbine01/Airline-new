@@ -2,9 +2,14 @@ stages:
   - deploy
 
 variables:
-  DOCKER_IMAGE_NAME: "airlinesystem-image"
+  DOCKER_IMAGE_NAME: "ece2crt/airlinesystem-image"
   DOCKER_IMAGE_TAG: "latest"  # or specify a version/tag
 
+before_script:
+  - echo "Install Docker..."
+  - apt-get update -qy
+  - apt-get install -y docker.io
+  
 deploy-job:
   stage: deploy
   script:
