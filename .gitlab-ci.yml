@@ -2,8 +2,8 @@ stages:
   - build
 
 variables:
-  DOCKER_IMAGE_NAME: "ece2crt/airline_systeme"  # Change this to your desired image name
-  DOCKER_IMAGE_TAG: "1.0"           # Change this to your desired image tag
+  DOCKER_IMAGE_NAME: "airline_system"
+  DOCKER_IMAGE_TAG: "1.0"
 
 before_script:
   - echo "Install Docker..."
@@ -13,5 +13,6 @@ before_script:
 build-job:
   stage: build
   script:
-    - ls -l /builds/dev-ops-group-x/flight-booking/Airline/Dockerfile  # Check if the Dockerfile exists
+    - pwd  # Print the current working directory
+    - ls -l /builds/dev-ops-group-x/flight-booking/Airline  # List contents of the "Airline" directory
     - docker build -t $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG -f "/builds/dev-ops-group-x/flight-booking/Airline/Dockerfile" .
