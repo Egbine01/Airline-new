@@ -13,5 +13,5 @@ before_script:
 build-job:
   stage: build
   script:
-     - echo "Building Docker image..."
+    - echo "Building Docker image..."
     - docker build -t $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG -f "Airline/Dockerfile" .
