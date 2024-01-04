@@ -7,8 +7,8 @@ variables:
 
 before_script:
   - echo "Install Docker..."
-  - choco install docker-cli -y  # Installing Docker CLI using Chocolatey
-  - RefreshEnv  # Refreshing environment variables after installing Docker CLI
+  - apt-get update -qy
+  - apt-get install -y docker.io
 
 build-job:
   stage: build
