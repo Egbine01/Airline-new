@@ -14,5 +14,5 @@ build-job:
   stage: build
   script:
     - echo "Building Docker image..."
-    - docker build -t $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG -f "Airline/Dockerfile" .
+    - docker build -t airline_system:1.0 -f "Airline/Dockerfile" .
     
