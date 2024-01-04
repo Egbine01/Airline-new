@@ -2,8 +2,8 @@ stages:
   - build
 
 variables:
-  DOCKER_IMAGE_NAME: "airline_system"
-  DOCKER_IMAGE_TAG: "1.0"
+  DOCKER_IMAGE_NAME: "ece2crt/airline_systeme"  # Change this to your desired image name
+  DOCKER_IMAGE_TAG: "1.0"           # Change this to your desired image tag
 
 before_script:
   - echo "Install Docker..."
