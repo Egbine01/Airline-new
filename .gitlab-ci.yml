@@ -13,7 +13,6 @@ before_script:
 build-job:
   stage: build
   script:
-     - echo "Contents of the Dockerfile directory:"
-     - ls -l "C:/Users/owner/Desktop/DevOps assignment/Airline"
-     - echo "Building Docker image..."
-     - docker build -t $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG -f "C:/Users/owner/Desktop/DevOps assignment/Airline/Dockerfile" .
+     - cp "C:/Users/owner/Desktop/DevOps assignment/Airline/Dockerfile" .
+     - ls -l
+     - docker build -t $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG -f "Dockerfile" .
