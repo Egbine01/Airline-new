@@ -15,6 +15,5 @@ deploy:
   script:
     - echo "Pulling Docker image from GitLab Container Registry..."
     - docker pull $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG
-
     - echo "Running Docker container..."
     - docker run -d --name airline_container -p 8080:8080 $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG
