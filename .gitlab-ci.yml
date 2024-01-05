@@ -5,6 +5,11 @@ variables:
   DOCKER_IMAGE_NAME: "registry.gitlab.com/dev-ops-group-x/flight-booking/airline_system"
   DOCKER_IMAGE_TAG: "1.0"
 
+before_script:
+  - echo "Install Docker..."
+  - apt-get update -qy
+  - apt-get install -y docker.io
+
 deploy:
   stage: deploy
   script:
