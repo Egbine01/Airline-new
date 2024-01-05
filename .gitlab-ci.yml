@@ -1,17 +1,27 @@
 stages:
-  - deploy
+  - build
+  - test
 
 variables:
-  DOCKER_IMAGE_NAME: "ece2crt/airlinesystem-image"
-  DOCKER_IMAGE_TAG: "latest"  # or specify a version/tag
+  DOCKER_IMAGE_NAME: "registry.gitlab.com/dev-ops-group-x/flight-booking/airline_system"
+  DOCKER_IMAGE_TAG: "latest"
 
 before_script:
   - echo "Install Docker..."
   - apt-get update -qy
   - apt-get install -y docker.io
-  
-deploy-job:
-  stage: deploy
+
+build-job:
+  stage: build
   script:
-    - docker pull $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG
-    - docker run --airlinesystem-image -d -p 8080:8080 $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG
+    - echo "Building Docker image..."
+    - docker pull $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG || true
+    - docker build -t $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG -f "C:\\Users\\owner\\Desktop\\DevOps assignment\\Airline\\Dockerfile" .
+
+test-job:
+  stage: test
+  script:
+    - echo "Running tests..."
+    # Add your test commands here
+
+# Add more stages and jobs for additional CI/CD steps as needed
