@@ -1,0 +1,72 @@
+--- Process 10636 created
+--- Process 10636 loaded C:\Windows\System32\ntdll.dll at 00007ffc49b30000
+--- Process 10636 loaded C:\Windows\System32\kernel32.dll at 00007ffc48480000
+--- Process 10636 loaded C:\Windows\System32\KernelBase.dll at 00007ffc47860000
+--- Process 10636 loaded C:\Windows\System32\ole32.dll at 00007ffc47bf0000
+--- Process 10636 loaded C:\Windows\System32\ucrtbase.dll at 00007ffc47760000
+--- Process 10636 thread 16336 created
+--- Process 10636 loaded C:\Windows\System32\rpcrt4.dll at 00007ffc496c0000
+--- Process 10636 loaded C:\Windows\System32\combase.dll at 00007ffc48540000
+--- Process 10636 loaded C:\Windows\System32\gdi32.dll at 00007ffc48450000
+--- Process 10636 loaded C:\Windows\System32\win32u.dll at 00007ffc47b60000
+--- Process 10636 loaded C:\Windows\System32\gdi32full.dll at 00007ffc47590000
+--- Process 10636 loaded C:\Windows\System32\msvcp_win.dll at 00007ffc47240000
+--- Process 10636 loaded C:\Windows\System32\user32.dll at 00007ffc49820000
+--- Process 10636 thread 17792 created
+--- Process 10636 loaded C:\Windows\System32\shell32.dll at 00007ffc489f0000
+--- Process 10636 thread 12820 created
+--- Process 10636 loaded C:\Windows\System32\advapi32.dll at 00007ffc49510000
+--- Process 10636 loaded C:\Windows\System32\msvcrt.dll at 00007ffc49310000
+--- Process 10636 loaded C:\Windows\System32\sechost.dll at 00007ffc495c0000
+--- Process 10636 loaded C:\Windows\System32\msi.dll at 00007ffc2c360000
+--- Process 10636 loaded C:\Windows\System32\version.dll at 00007ffc39c70000
+--- Process 10636 loaded C:\Windows\System32\bcrypt.dll at 00007ffc47210000
+--- Process 10636 loaded C:\Windows\System32\imm32.dll at 00007ffc497f0000
+--- Process 10636 loaded C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3636_none_60b6a03d71f818d5\comctl32.dll at 00007ffc33fb0000
+--- Process 10636 loaded C:\Windows\System32\coml2.dll at 00007ffc488d0000
+--- Process 10636 loaded C:\Windows\System32\bcryptprimitives.dll at 00007ffc47330000
+--- Process 10636, exception e06d7363 at 00007ffc4788cf19
+--- Process 10636, exception e06d7363 at 00007ffc4788cf19
+--- Process 10636, exception e06d7363 at 00007ffc4788cf19
+--- Process 10636, exception e06d7363 at 00007ffc4788cf19
+--- Process 10636, exception e06d7363 at 00007ffc4788cf19
+--- Process 10636, exception e06d7363 at 00007ffc4788cf19
+--- Process 10636, exception e06d7363 at 00007ffc4788cf19
+--- Process 10636, exception e06d7363 at 00007ffc4788cf19
+--- Process 10636 loaded C:\Windows\System32\cryptsp.dll at 00007ffc46bb0000
+--- Process 10636 loaded C:\Windows\System32\rsaenh.dll at 00007ffc46230000
+--- Process 10636 loaded C:\Windows\System32\cryptbase.dll at 00007ffc46ae0000
+--- Process 512 created
+--- Process 512 loaded C:\Windows\System32\ntdll.dll at 00007ffc49b30000
+--- Process 512 loaded C:\Windows\System32\kernel32.dll at 00007ffc48480000
+--- Process 512 loaded C:\Windows\System32\KernelBase.dll at 00007ffc47860000
+--- Process 512 thread 18380 created
+--- Process 512 loaded C:\Windows\System32\ucrtbase.dll at 00007ffc47760000
+--- Process 512 thread 21252 created
+--- Process 512 thread 20844 created
+--- Process 512 loaded C:\Program Files\Java\jdk-21\bin\jli.dll at 00007ffc278e0000
+--- Process 512 loaded C:\Program Files\Java\jdk-21\bin\vcruntime140.dll at 00007ffc27950000
+--- Process 512 loaded C:\Windows\System32\advapi32.dll at 00007ffc49510000
+--- Process 512 loaded C:\Windows\System32\msvcrt.dll at 00007ffc49310000
+--- Process 512 loaded C:\Windows\System32\sechost.dll at 00007ffc495c0000
+--- Process 512 loaded C:\Windows\System32\rpcrt4.dll at 00007ffc496c0000
+--- Process 512 loaded C:\Windows\System32\user32.dll at 00007ffc49820000
+--- Process 512 loaded C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3636_none_60b6a03d71f818d5\comctl32.dll at 00007ffc33fb0000
+--- Process 512 loaded C:\Windows\System32\win32u.dll at 00007ffc47b60000
+--- Process 512 loaded C:\Windows\System32\gdi32.dll at 00007ffc48450000
+--- Process 512 loaded C:\Windows\System32\gdi32.dll at 000001e603950000
+--- Process 512 unloaded DLL at 000001e603950000
+--- Process 512 loaded C:\Windows\System32\gdi32full.dll at 00007ffc47590000
+--- Process 512 loaded C:\Windows\System32\msvcp_win.dll at 00007ffc47240000
+--- Process 512 loaded C:\Windows\System32\version.dll at 00007ffc39c70000
+--- Process 512 loaded C:\Windows\System32\imm32.dll at 00007ffc497f0000
+--- Process 512 loaded C:\Windows\System32\kernel.appcore.dll at 00007ffc45a20000
+--- Process 512 thread 21252 exited with status 0x1
+--- Process 512 thread 18380 exited with status 0x1
+--- Process 512 thread 20844 exited with status 0x1
+--- Process 512 exited with status 0x1
+--- Process 10636 loaded C:\Windows\System32\kernel.appcore.dll at 00007ffc45a20000
+--- Process 10636 thread 16336 exited with status 0x1
+--- Process 10636 thread 17792 exited with status 0x1
+--- Process 10636 thread 12820 exited with status 0x1
+--- Process 10636 exited with status 0x1
