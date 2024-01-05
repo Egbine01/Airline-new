@@ -14,9 +14,9 @@ before_script:
 deploy-job:
   stage: deploy
   script:
-    - echo "Deploying Docker image..."
-    - docker pull $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG || true
-    - docker run -d -p 8080:8080 --name airline_container $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG
+     - echo "Deploying Docker image..."
+     - docker:19.03.14-dind pull $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG || true
+     - docker:19.03.14-dind run -d -p 8080:8080 --name airline_container $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG
 
 test-job:
   stage: test
