@@ -1,6 +1,5 @@
 stages:
-  - build
-  - test
+  - deploy
 
 variables:
   DOCKER_IMAGE_NAME: "registry.gitlab.com/dev-ops-group-x/flight-booking/airline_system"
@@ -11,17 +10,11 @@ before_script:
   - apt-get update -qy
   - apt-get install -y docker.io
 
-build-job:
-  stage: build
+deploy-job:
+  stage: deploy
   script:
-    - echo "Building Docker image..."
+    - echo "Deploying Docker image..."
     - docker pull $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG || true
-    - docker build -t $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG -f "C:\\Users\\owner\\Desktop\\DevOps assignment\\Airline\\Dockerfile" .
-
-test-job:
-  stage: test
-  script:
-    - echo "Running tests..."
-    # Add your test commands here
+    - docker run -d -p 8080:8080 --name airline_container $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG
 
 # Add more stages and jobs for additional CI/CD steps as needed
