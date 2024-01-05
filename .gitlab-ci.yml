@@ -1,9 +1,10 @@
 stages:
   - deploy
+  - test
 
 variables:
   DOCKER_IMAGE_NAME: "registry.gitlab.com/dev-ops-group-x/flight-booking/airline_system"
-  DOCKER_IMAGE_TAG: "latest"
+  DOCKER_IMAGE_TAG: "1.0"
 
 before_script:
   - echo "Install Docker..."
@@ -16,5 +17,11 @@ deploy-job:
     - echo "Deploying Docker image..."
     - docker pull $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG || true
     - docker run -d -p 8080:8080 --name airline_container $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG
+
+test-job:
+  stage: test
+  script:
+    - echo "Running tests..."
+    # Add your test commands here
 
 # Add more stages and jobs for additional CI/CD steps as needed
